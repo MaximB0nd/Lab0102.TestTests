@@ -1,0 +1,9 @@
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\bin\Debug\EmployeeTests.dll
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\bin\Debug\EmployeeTests.pdb
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\bin\Debug\nunit.framework.dll
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\bin\Debug\nunit.framework.xml
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\obj\Debug\EmployeeTests.csproj.AssemblyReference.cache
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\obj\Debug\EmployeeTests.csproj.CoreCompileInputs.cache
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\obj\Debug\Employee.9A72504B.Up2Date
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\obj\Debug\EmployeeTests.dll
+C:\Users\maksimbondarev\RiderProjects\ClassLibrary1\EmployeeTests\obj\Debug\EmployeeTests.pdb
