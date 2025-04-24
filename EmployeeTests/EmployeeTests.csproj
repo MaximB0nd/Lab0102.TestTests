@@ -49,6 +49,7 @@
     <ItemGroup>
         <Compile Include="CheckNameTest.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="TimeUntilRetirementTest.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\EmployeeLibrary\EmployeeLibrary.csproj" />
