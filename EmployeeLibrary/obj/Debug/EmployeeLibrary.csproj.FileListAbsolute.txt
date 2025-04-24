@@ -1,0 +1,6 @@
+C:\Users\maksimbondarev\RiderProjects\Lab0102.TestTests\EmployeeLibrary\bin\Debug\EmployeeLibrary.dll
+C:\Users\maksimbondarev\RiderProjects\Lab0102.TestTests\EmployeeLibrary\bin\Debug\EmployeeLibrary.pdb
+C:\Users\maksimbondarev\RiderProjects\Lab0102.TestTests\EmployeeLibrary\obj\Debug\EmployeeLibrary.csproj.AssemblyReference.cache
+C:\Users\maksimbondarev\RiderProjects\Lab0102.TestTests\EmployeeLibrary\obj\Debug\EmployeeLibrary.csproj.CoreCompileInputs.cache
+C:\Users\maksimbondarev\RiderProjects\Lab0102.TestTests\EmployeeLibrary\obj\Debug\EmployeeLibrary.dll
+C:\Users\maksimbondarev\RiderProjects\Lab0102.TestTests\EmployeeLibrary\obj\Debug\EmployeeLibrary.pdb
