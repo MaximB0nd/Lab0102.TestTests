@@ -5,5 +5,6 @@
     &lt;TestId&gt;NUnit3x::0046559F-639C-400C-BAF8-023D309EB992::.NETFramework,Version=v4.7.2::EmployeeTests.MonthPaymentTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::0046559F-639C-400C-BAF8-023D309EB992::.NETFramework,Version=v4.7.2::EmployeeTests.TimeUntilRetirementTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::0046559F-639C-400C-BAF8-023D309EB992::.NETFramework,Version=v4.7.2::EmployeeTests.TeacherTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0046559F-639C-400C-BAF8-023D309EB992::.NETFramework,Version=v4.7.2::EmployeeTests.CheckNameTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

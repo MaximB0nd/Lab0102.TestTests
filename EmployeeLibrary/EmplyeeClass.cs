@@ -27,18 +27,19 @@ namespace EmployeeLibrary
             FEMALE
         };
 
-        string name;
-        DateTime birthday;
-        Gender gender;
-        decimal salary;
-        private decimal percentMonthlyPremium;
-        Education education;
-        CurrentPosition position;
+        public string name { get; private set; }
+        public DateTime birthday { get; private set; }
+        public Gender gender { get; private set; }
+        public Education education { get; private set; }
+        public CurrentPosition position { get; private set; }
+        public decimal salary { get; private set; }
+        public decimal percentMonthlyPremium { get; private set;}
+        public decimal bonus => monthPayment();
 
 
         public bool checkName()
         {
-            if (name.Length < 2 || name.Length > 15) return false;
+            if (name.Length < 2) return false;
 
             int digitCount = 0;
             int digitPosition = -1;
@@ -48,11 +49,11 @@ namespace EmployeeLibrary
                 if (char.IsDigit(name[i]))
                 {
                     digitCount++;
-                    digitPosition = i;
+                    if (digitPosition == -1) digitPosition = i;
                 }
             }
 
-            if (digitCount != 1 || digitPosition == 0)
+            if (digitCount == name.Length || digitPosition == 0)
                 return false;
 
             foreach (char c in name)
