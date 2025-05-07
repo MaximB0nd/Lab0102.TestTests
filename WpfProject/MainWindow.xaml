@@ -19,41 +19,41 @@
             <TextBlock Text="Пол:"/>
             <ComboBox x:Name="cmbGender">
                 <ComboBoxItem Content="Не выбрано" IsSelected="True"/>
-                <ComboBoxItem Content="Мужской"/>
-                <ComboBoxItem Content="Женский"/>
+                <ComboBoxItem Content="MALE"/>
+                <ComboBoxItem Content="FEMALE"/>
             </ComboBox>
             
             
             <TextBlock Text="Образование:"/>
             <ComboBox x:Name="cmbEducation">
                 <ComboBoxItem Content="Не выбрано" IsSelected="True"/>
-                <ComboBoxItem Content="Начальное"/>
-                <ComboBoxItem Content="Среднее"/>
-                <ComboBoxItem Content="Среднее специальное"/>
-                <ComboBoxItem Content="Высшее"/>
+                <ComboBoxItem Content="PRIMARY"/>
+                <ComboBoxItem Content="SECONDARY"/>
+                <ComboBoxItem Content="SPECIALIZED_SECONDARY"/>
+                <ComboBoxItem Content="HIGHER"/>
             </ComboBox>
             
             <TextBlock Text="Должность:"/>
             <ComboBox x:Name="cmbPosition">
                 <ComboBoxItem Content="Не выбрано" IsSelected="True"/>
-                <ComboBoxItem Content="Директор"/>
-                <ComboBoxItem Content="Менеджер"/>
-                <ComboBoxItem Content="Джуниор"/>
-                <ComboBoxItem Content="Миддл"/>
-                <ComboBoxItem Content="Синьор"/>
+                <ComboBoxItem Content="DIRECTOR"/>
+                <ComboBoxItem Content="MANAGER"/>
+                <ComboBoxItem Content="JUNIOR"/>
+                <ComboBoxItem Content="MIDDLE"/>
+                <ComboBoxItem Content="SENIOR"/>
             </ComboBox>
             
             <TextBlock Text="Зарплата:"/>
-            <TextBox x:Name="txtSalary"/>
+            <TextBox x:Name="txtSalary" TextChanged="CalculateBonus"/>
             
             <TextBlock Text="Премия:"/>
-            <TextBlock x:Name="txtBonus" Background="LightGray"/>
+            <TextBlock x:Name="txtBonus"/>
             
             <Button Content="Добавить" Click="AddEmployee_Click" Margin="0,10"/>
+            <Button Content="Сохранить в файл" Click="SaveToFile_Click" Margin="0,10"/>
             <TextBlock x:Name="txtError" Foreground="Red"/>
         </StackPanel>
-
-        <!-- Список сотрудников -->
+        
         <DataGrid Grid.Column="1" x:Name="dgEmployees" AutoGenerateColumns="False" Margin="10" ItemsSource="{Binding employees}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Имя" Binding="{Binding name}"/>
@@ -63,7 +63,8 @@
                 <DataGridTextColumn Header="Должность" Binding="{Binding position}"/>
                 <DataGridTextColumn Header="Зарплата" Binding="{Binding salary, StringFormat=N2}"/>
                 <DataGridTextColumn Header="Премия" Binding="{Binding bonus, StringFormat=N2}"/>
+                <DataGridTextColumn Header="Полная зарплата" Binding="{Binding FullSalary, StringFormat=N2}"/>
             </DataGrid.Columns>
-        </DataGrid>
+        </DataGrid> 
     </Grid>
 </Window>

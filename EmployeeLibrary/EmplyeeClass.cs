@@ -35,8 +35,7 @@ namespace EmployeeLibrary
         public decimal salary { get; private set; }
         public decimal percentMonthlyPremium { get; private set;}
         public decimal bonus => monthPayment();
-
-
+        
         public bool checkName()
         {
             if (name.Length < 2) return false;
@@ -89,30 +88,30 @@ namespace EmployeeLibrary
             var days = retDate.Date - DateTime.Today;
             return days.Days;
         }
-
-        public decimal monthPayment()
+        
+        private decimal monthPayment()
         {
-            decimal percertPremium = 0;
-
+            decimal percentPremium = 0;
             switch (position)
             {
                 case CurrentPosition.DIRECTOR:
                 case CurrentPosition.SENIOR:
-                    percertPremium = 0.15m;
+                    percentPremium = 0.15m;
                     break;
                 case CurrentPosition.MIDDLE:
-                    percertPremium = 0.10m;
+                    percentPremium = 0.10m;
                     break;
                 case CurrentPosition.JUNIOR:
-                    percertPremium = 0.05m;
+                    percentPremium = 0.05m;
                     break;
                 case CurrentPosition.MANAGER:
-                    percertPremium = 0.03m;
+                    percentPremium = 0.03m;
                     break;
             }
-
-            return salary * (1 + percertPremium);
+            return salary * percentPremium; 
         }
+        
+        public decimal FullSalary => salary + bonus;
 
         public Employee(string name, DateTime birthday, Gender gender, decimal salary, CurrentPosition position,
             Education education)
